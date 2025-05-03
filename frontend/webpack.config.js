@@ -21,7 +21,7 @@ module.exports = {
                   require('tailwindcss'),
                   require('autoprefixer'),
                   require('postcss-calc')({
-                    exclude: /@radix-ui\/themes/, // Exclude Radix UI styles
+                    exclude: /node_modules\/(@radix-ui\/themes)/, // Exclude Radix UI styles
                   }),
                 ],
               },
