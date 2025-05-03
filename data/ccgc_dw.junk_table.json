@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "67c9a4a486648241ab6403cc"
+  },
+  "id_junk": 1,
+  "code_type_facture": "BLF",
+  "code_type_operation": "ALEG",
+  "code_statut": "UNKNOWN"
+},
+{
+  "_id": {
+    "$oid": "67c9a4a486648241ab6403cd"
+  },
+  "id_junk": 2,
+  "code_type_facture": "BLF",
+  "code_type_operation": "ACER",
+  "code_statut": "UNKNOWN"
+},
+{
+  "_id": {
+    "$oid": "67c9a4a486648241ab6403ce"
+  },
+  "id_junk": 3,
+  "code_type_facture": "BLF",
+  "code_type_operation": "ACER",
+  "code_statut": "ANNU"
+},
+{
+  "_id": {
+    "$oid": "67c9a4a486648241ab6403cf"
+  },
+  "id_junk": 4,
+  "code_type_facture": "BLF",
+  "code_type_operation": "ACER",
+  "code_statut": "REGL"
+},
+{
+  "_id": {
+    "$oid": "67c9a4a486648241ab6403d0"
+  },
+  "id_junk": 5,
+  "code_type_facture": "FACT",
+  "code_type_operation": "VCER",
+  "code_statut": "VALI"
+},
+{
+  "_id": {
+    "$oid": "67c9a4a486648241ab6403d1"
+  },
+  "id_junk": 6,
+  "code_type_facture": "FACT",
+  "code_type_operation": "VCER",
+  "code_statut": "ANNU"
+},
+{
+  "_id": {
+    "$oid": "67c9a4a486648241ab6403d2"
+  },
+  "id_junk": 7,
+  "code_type_facture": "FACT",
+  "code_type_operation": "VLEG",
+  "code_statut": "VALI"
+},
+{
+  "_id": {
+    "$oid": "67c9a4a486648241ab6403d3"
+  },
+  "id_junk": 8,
+  "code_type_facture": "BLF",
+  "code_type_operation": "ALEG",
+  "code_statut": "REGL"
+},
+{
+  "_id": {
+    "$oid": "67c9a4a486648241ab6403d4"
+  },
+  "id_junk": 9,
+  "code_type_facture": "BLF",
+  "code_type_operation": "ACER",
+  "code_statut": "CONF"
+},
+{
+  "_id": {
+    "$oid": "67c9a4a486648241ab6403d5"
+  },
+  "id_junk": 10,
+  "code_type_facture": "BLF",
+  "code_type_operation": "ALEG",
+  "code_statut": "ANNU"
+},
+{
+  "_id": {
+    "$oid": "67c9a4a486648241ab6403d6"
+  },
+  "id_junk": 11,
+  "code_type_facture": "BLF",
+  "code_type_operation": "ALEG",
+  "code_statut": "SAIS"
+}]
