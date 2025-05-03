@@ -5,7 +5,7 @@ import { SalesOverview } from "../components/dashboard/SalesOverview"
 import { ArticlePerformance } from "../components/dashboard/ArticlePerformance"
 import {ClientInsights} from "../components/dashboard/ClientInsights"
 export default function DashboardPage() {
-  const [showFilters, setShowFilters] = useState(false)
+  const [showFilters] = useState(false)
   const [activeTab, setActiveTab] = useState("sales")
 
   // Mock components with black theme
