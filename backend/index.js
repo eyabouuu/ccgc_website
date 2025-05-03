@@ -18,6 +18,14 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const corsOptions = {
+  origin: 'https://ccgc-website.onrender.com/', // Replace with your frontend's URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+  credentials: true, // Allow cookies if needed
+};
+
+app.use(cors(corsOptions));
+
 app.get("/", (req, res) => {
   res.send("API is running...");
 });
