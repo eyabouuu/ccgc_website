@@ -20,13 +20,13 @@ export function ArticlePerformance() {
 
   useEffect(() => {
     // Fetch sales by article type data
-    fetch("http://localhost:5000/api/articles/sales-by-article")
+    fetch(process.env.REACT_APP_BACKEND_URL + "/articles/sales-by-article")
       .then((response) => response.json())
       .then((data) => setSalesByArticleTypeData(data))
       .catch((error) => console.error("Error fetching sales data:", error));
 
     // Fetch transaction types distribution data
-    fetch("http://localhost:5000/api/transaction-types-distribution")
+    fetch(process.env.REACT_APP_BACKEND_URL + "/transaction-types-distribution")
       .then((response) => response.json())
       .then((data) => setTransactionTypesData(data))
       .catch((error) =>
@@ -34,7 +34,7 @@ export function ArticlePerformance() {
       );
 
     // Fetch article performance data
-    fetch("http://localhost:5000/api/articles/article-performance")
+    fetch(process.env.REACT_APP_BACKEND_URL + "/articles/article-performance")
       .then((response) => response.json())
       .then((data) => setArticlePerformanceData(data))
       .catch((error) =>

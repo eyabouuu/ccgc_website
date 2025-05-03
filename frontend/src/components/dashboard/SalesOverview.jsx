@@ -25,7 +25,7 @@ export function SalesOverview() {
       setIsLoading(true);
       setError(null);
       try {
-        const response = await fetch(`http://localhost:5000/api/sales/top-centers?year=${selectedYear}`);
+        const response = await fetch(process.env.REACT_APP_BACKEND_URL +`/sales/top-centers?year=${selectedYear}`);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -48,7 +48,7 @@ export function SalesOverview() {
   useEffect(() => {
     const fetchTopClients = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/sales/top-clients");
+        const response = await fetch(process.env.REACT_APP_BACKEND_URL + "/sales/top-clients");
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }

@@ -11,7 +11,7 @@ export function ClientInsights() {
   useEffect(() => {
     const fetchClientsByGovernorate = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/clients/clients-by-governorate");
+        const response = await fetch(process.env.REACT_APP_BACKEND_URL + "/clients/clients-by-governorate");
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }

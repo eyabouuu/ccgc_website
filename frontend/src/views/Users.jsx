@@ -18,7 +18,7 @@ const SubAdminManagement = () => {
   const fetchSubAdmins = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/auth/sub-admins', {
+      const response = await axios.get(process.env.REACT_APP_BACKEND_URL + '/auth/sub-admins', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setSubAdmins(response.data);
@@ -66,13 +66,13 @@ const SubAdminManagement = () => {
     try {
       if (isEditing) {
         // Update sub-admin
-        await axios.put(`http://localhost:5000/api/auth/sub-admins/${formData._id}`, formData, {
+        await axios.put(process.env.REACT_APP_BACKEND_URL +`/auth/sub-admins/${formData._id}`, formData, {
           headers: { Authorization: `Bearer ${token}` },
         });
         toast.success('Sub-admin updated successfully');
       } else {
         // Create new sub-admin
-        await axios.post('http://localhost:5000/api/auth/sub-admins', formData, {
+        await axios.post(process.env.REACT_APP_BACKEND_URL +'/auth/sub-admins', formData, {
           headers: { Authorization: `Bearer ${token}` },
         });
         toast.success('Sub-admin created successfully');
@@ -88,7 +88,7 @@ const SubAdminManagement = () => {
   const handleDelete = async (id) => {
     const token = localStorage.getItem('token');
     try {
-      await axios.delete(`http://localhost:5000/api/auth/sub-admins/${id}`, {
+      await axios.delete(process.env.REACT_APP_BACKEND_URL +`/auth/sub-admins/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       toast.success('Sub-admin deleted successfully');

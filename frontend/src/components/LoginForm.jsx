@@ -8,12 +8,13 @@ export function LoginForm({ className = "", ...props }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(""); // Clear any previous errors
 
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/signin", {
+      const response = await axios.post(process.env.REACT_APP_BACKEND_URL + "/auth/signin", {
         email,
         password,
       });
