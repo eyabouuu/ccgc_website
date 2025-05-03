@@ -7,7 +7,7 @@
     "test": "jest",
     "start": "node index.js",
     "server": "nodemon index.js",
-    "build": "node build"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
